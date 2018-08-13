@@ -46,7 +46,6 @@ time = raw_input(G+'>')
 if time == "no" or "n" or "NO" or "N" :
 	os.system("service tor start")
 	print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
-	time.sleep(2)
 	sent = 0
 
 	while True:
@@ -59,7 +58,6 @@ if time == "y" or "yes" or "YES" or "Y" :
 	timeout = time.time() + duration
 	os.system("service tor start")
 	print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
-	time.sleep(2)
 	sent = 0
 
 	while True:
