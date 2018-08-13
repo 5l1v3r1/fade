@@ -20,6 +20,7 @@ if choice == "install" or "INSTALL" or "START" or "start" :
 	os.system("figlet -f mono9 /UPDATING")
 	os.system("figlet -f mono9 PLEASE WAIT")
 	os.system("apt-get install lolcat && gem install lolcat")
+	os.system("apt-get install tor")
 
 none_ascii = '''
 	
