@@ -15,6 +15,9 @@ print Y+"[install]", N+"hit", Y+"enter", N+"to install"
 choice = raw_input(G+'>')
 if choice == "install" or "INSTALL" or "START" or "start" :
 	print R+"[!]", N+"YOU DO NEED THE PYTHON MODULE SOCKS INSTALLED TO RUN FADE.PY"
+	print Y+"[~]", N+"HERE I WILL INSTALL IT FOR YOU"
+	os.system("pip install requests")
+	os.system("pip install requests[socks]")
 	time.sleep(4.5)
 	os.system("figlet -f mono9 INSTALLING")
 	os.system("figlet -f mono9 /UPDATING")
