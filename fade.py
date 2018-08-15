@@ -80,6 +80,8 @@ echo '''
 ╚═╝     ╚═╝  ╚═╝╚═════╝ ╚══════╝    ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝                                                                                      
 ''' | lolcat """)
 print G+"                  coded by \033[0m@unkn0wn_bali"
+
+
 target = raw_input(G+'[?] \033[0m3NTER T@RGET #:')
 ip = socket.gethostbyname(target)
 
